@@ -1,1 +1,1 @@
-docker build -t dashing .
+docker build -t dashing/dashing .
