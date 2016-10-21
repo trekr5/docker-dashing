@@ -37,8 +37,9 @@ RUN apt-get install -y nodejs
 
 RUN dashing new $DASHBOARD && \
     cd $DASHBOARD && \
-    bundle && \
-    dashing start -d
+    bundle 
 
 #Add runit services
 ADD sv /etc/service 
+RUN cd /etc/service/dashing 
+CMD ["/bin/bash", "run.sh"] 
