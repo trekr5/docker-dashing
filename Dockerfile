@@ -6,7 +6,7 @@ FROM ubuntu:14.04
 #ENV HTTP_PROXY=http://<fillin_your_proxy_ip>:<fillin_your_proxy_port>
 #ENV https_proxy=http://<fillin_your_proxy_ip>:<fillin_your_proxy_port>
 #ENV http_proxy=http://<fillin_your_proxy_ip>:<fillin_your_proxy_port>
-ENV DASHBOARD graphite
+ENV DASHBOARD new_graphite 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
 
@@ -25,7 +25,7 @@ RUN sed -i "s/session.*required.*pam_loginuid.so/#session    required     pam_lo
 RUN sed -i "s/PermitRootLogin without-password/#PermitRootLogin without-password/" /etc/ssh/sshd_config
 
 #required
-RUN apt-get install -y build-essential ruby1.9.1 ruby1.9.1-dev
+RUN apt-get install -y build-essential ruby1.9.1 ruby1.9.1-dev libxslt-dev libxml2-dev zlib1g-dev
 RUN gem install dashing --no-rdoc --no-ri
 RUN gem install bundler --no-rdoc --no-ri
 
@@ -35,11 +35,12 @@ RUN add-apt-repository -y ppa:chris-lea/node.js
 RUN apt-get update
 RUN apt-get install -y nodejs
 
-RUN dashing new $DASHBOARD && \
-    cd $DASHBOARD && \
-    bundle 
+EXPOSE 3030
 
-#Add runit services
-ADD sv /etc/service 
-RUN cd /etc/service/dashing 
-CMD ["/bin/bash", "run.sh"] 
+RUN dashing new $DASHBOARD && \
+    chmod 777 $DASHBOARD && \
+    cd $DASHBOARD && \
+    bundle
+
+CMD cd /$DASHBOARD;dashing start
+CMD echo "dashboard launched"
