@@ -25,13 +25,4 @@ RUN add-apt-repository -y ppa:chris-lea/node.js
 RUN apt-get update
 RUN apt-get install -y nodejs
 
-EXPOSE 3030
-ENV DASHBOARD new_graphite 
 
-RUN dashing new $DASHBOARD && \
-    chmod 777 $DASHBOARD && \
-    cd $DASHBOARD && \
-    bundle
-
-CMD cd /$DASHBOARD;dashing start
-RUN echo "dashing started..."
