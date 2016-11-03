@@ -1,13 +1,9 @@
 FROM trekr5/dashing:latest
 
-#RUN apt-get install -y liblzma-dev zlib1g-dev
-
 ENV DASHBOARD graphite 
 
 RUN dashing new $DASHBOARD && \
         chmod 777 $DASHBOARD 
-    	#cd $DASHBOARD && \
-	#bundle install 
 
 RUN rm -rf /$DASHBOARD/jobs && \ 
     rm -rf /$DASHBOARD/public && \
