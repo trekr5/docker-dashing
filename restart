@@ -1,0 +1,6 @@
+echo "stop docker container"
+docker stop dashingn 
+echo "remove docker container"
+docker rm -f dashingn
+echo "run docker container"
+./run

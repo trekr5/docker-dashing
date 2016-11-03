@@ -1,0 +1,68 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 5
+});
+</script>
+
+<style type='text/css'>
+ h3 {
+    font-size: 51px;
+    font-weight: 900;
+    color: white;
+  }
+</style>
+
+<% content_for :title do %>Successful Donations Dashboard<% end %>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/JustGiving-G-280.png"></div>
+    </li>
+      <!--  <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="active_no_of_users" data-view="Numbersuccess" data-title="Active Users" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-moreinfo="now-1min" ></div>
+    </li> -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="awesome_1h" data-view="Newalerthour" data-title="Awesome (1h)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="now-1h(rolling hour)" ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="classic_1h" data-view="Newalerthour" data-title="Classic (1h)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="now-1h(rolling hour)" ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="paypal_1h" data-view="Newalerthour" data-title="PayPal (1h)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="now-1h(rolling hour)" ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="sms_1h" data-view="Newalerthour" data-title="SmS (1h)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="now-1h(rolling hour)" ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="successful_1h" data-view="Newalerthour" data-title="Successful (1h)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="now-1h(rolling hour)" ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="awesome_day" data-view="Newalertday" data-title="Awesome (day)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="midnight-now(rolling day)" ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="classic_day" data-view="Newalertday" data-title="Classic (day)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="midnight-now(rolling day)" ></div>
+    </li>
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="paypal_day" data-view="Newalertday" data-title="PayPal (day-e)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="midnight-now(rolling day)" ></div>
+    </li> -->
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="" data-text="Successful Donations"></div>
+    </li>
+     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="sms_day" data-view="Newalertday" data-title="SmS (day)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="midnight-now(rolling day)" ></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <div data-id="successful_day" data-view="Newalertday" data-title="Successful (day)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="midnight-now(rolling day)" ></div>
+   </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <div data-id="paypal_success_10min" data-view="Newalertday" data-title="Paypal (1min)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="now-1min(rolling week)" ></div>
+   </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <div data-id="paypal_success_midnight" data-view="Newalertday" data-title="Paypal (day)" data-addclass-success="isTooGood" data-addclass-danger="isTooLow" data-addclass-nochange="isTheSame" data-moreinfo="midnight-now(rolling week)" ></div>
+   </li>
+  </ul>
+ </div>
+
+ 

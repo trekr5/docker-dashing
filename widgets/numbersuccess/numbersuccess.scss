@@ -1,0 +1,55 @@
+$title-color:       white;
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+$value-color:       white;
+
+
+.widget-numbersuccess {
+ background: cadetblue;
+  font-size: 60px;
+  font-weight: bold;
+
+  .title {
+    color: $title-color;
+    font-size: 34px;
+   font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .value {
+    color: $value-color;
+    text-shadow: 2px 2px #707070;
+    margin-top: 42px;
+    font-size: 64px;
+  }
+
+  .change-rate {
+    font-weight: 500;
+    font-size: 30px;
+    color: $value-color;
+    text-shadow: 2px 2px #707070;
+  }
+
+  .more-info {
+    color: white;
+    font-weight: lighter;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: lighter;
+  }
+ 
+}
+
+//.nochange {
+//	background: #FF9900;
+//}
+
+.success {
+	background: green;
+
+}
+
+.danger {
+  background: #FF0000;
+}

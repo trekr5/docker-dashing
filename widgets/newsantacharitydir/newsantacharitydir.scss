@@ -1,0 +1,231 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  red;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-newsantacharitydir styles
+// ----------------------------------------------------------------------------
+
+.widget-newsantacharitydir {
+
+  background-color: red;
+  vertical-align: top;
+
+  .title {
+    color: white;
+    font-weight: bold;
+  }
+
+   .charityname1 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  margin-top: 33px;
+  margin-left: 17px
+  }
+
+   .charityname2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  margin-top: -35px;
+  }
+
+   .appealname1 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -75px;
+  margin-left: -157px
+  }
+
+  .appealname2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -35px;
+  margin-left: -152px
+  }
+
+  .sms1 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -41px;
+  margin-right: -221px
+  }
+
+  .sms2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -10px;
+  margin-right: -221px
+  }
+
+  .donationcategory1 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: right;
+  margin-top: -72px;
+  margin-right: 17px
+  }
+
+  .donationcategory2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: right;
+  margin-top: -11px;
+  }
+
+  /*
+  .donationcategory1 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: right;
+  margin-top: -72px;
+  margin-right: 17px
+  }
+
+  .donationcategory2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: right;
+  margin-top: -11px;
+  margin-right: -5px;
+  }
+  */
+
+  .textvalue {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: right;
+  margin-top: -33px;
+  }
+
+  .donationcount1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  font-size: 21px;
+  text-align: left;
+  margin-bottom: 1px;
+
+  }
+
+  .donationcount {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 3px 3px #707070;
+  text-align: left;
+  margin-left: 38px;
+  margin-bottom: -10px;
+
+  }
+
+  .donation {
+  text-align: center;
+  margin-bottom: -85px;
+  margin-top: -87px;
+  }
+
+  .donation .donationamount {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 3px 3px #707070;
+  margin-bottom: -14px;
+
+  }
+
+  .donation .donationamount1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  text-align: center;
+  font-size: 21px;
+  margin-bottom: -79px;
+  margin-top: 2px;
+
+  }
+
+
+  
+   .giftaid {
+   text-align: right;
+   margin-bottom: -112px;
+   margin-top: 29px;
+   font-weight: bold;
+   color: rgba(255, 255, 255, 0.7);
+  }
+
+  .giftaid .giftaidamount {
+  color: white;
+  font-size: 30px;
+  text-shadow: 3px 3px 0 #707070;
+  margin-right: 27px !important;
+  margin-bottom: -11px;
+  }
+
+  .giftaid .giftaidamount1 {
+  text-align: right;
+  font-size: 21px;
+  margin-bottom: -79px;
+  }
+
+  .totalamount {
+  color: white;
+   text-shadow:  3px 3px 0 #464646;
+  font-weight: bold;
+  font-size: 109px;
+  text-align: center;
+  margin-top: -87px;
+
+  }
+
+  .totalamount1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  text-align: center;
+  margin-top: -20px;
+
+  }
+
+  h1 {
+    color: white;
+    font-size: 40px;
+    margin-top: -150px;
+  }
+
+   h3 {
+    color: $title-color;
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: -9px;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+}

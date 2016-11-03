@@ -1,0 +1,19 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [300, 272]
+  Dashing.numColumns = 6
+});
+</script>
+
+<% content_for :title do %>List Dashboard<% end %>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="2" data-sizex="3" data-sizey="5">
+      <div data-id="fundraising" data-view="List" data-unordered="true" data-title="Top 20 Fundraising URLs" data-moreinfo="# of hits"></div>
+   </li>
+   <li data-row="1" data-col="2" data-sizex="2" data-sizey="5">
+      <div data-id="crowdfunding" data-view="List" data-unordered="true" data-title="Top 20 Crowdfunding URLs" data-moreinfo="# of hits"></div>
+   </li>
+  </ul>
+</div>
