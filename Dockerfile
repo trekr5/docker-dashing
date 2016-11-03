@@ -19,9 +19,7 @@ RUN rm -rf /$DASHBOARDS/dashboards && \
     mv /$DASHBOARD/assets/stylesheets/jquery.gridster.css /$DASHBOARD/assets/stylesheets/jquery.gridster.min.css 
 
 ADD jobs /$DASHBOARD/jobs
-#ADD assets /$DASHBOARD/assets
 ADD dashboards /$DASHBOARD/dashboards
-#ADD public /$DASHBOARD/public
 ADD widgets /$DASHBOARD/widgets
 ADD assets/images /$DASHBOARD/assets/images
 ADD lib /$DASHBOARD/lib
