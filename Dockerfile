@@ -14,6 +14,8 @@ RUN rm -rf /$DASHBOARD/jobs && \
     rm -rf /$DASHBOARD/jobs/buzzwords.rb && \
     rm -rf /$DASHBOARD/jobs/sample.rb && \
     rm -rf /$DASHBOARD/jobs/convergence.rb && \
+    rm -rf /$DASHBOARD/dashboards/sample.erb && \
+    rm -rf /$DASHBOARD/dashboards/sampletv.erb && \
     rm -rf /$DASHBOARD/assets/javascripts/application.coffee && \
     rm -rf /$DASHBOARD/assets/stylesheets/application.scss && \
     rm -rf /$DASHBOARD/config.ru && \
