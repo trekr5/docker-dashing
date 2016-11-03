@@ -1,6 +1,6 @@
 FROM trekr5/dashing:latest
 
-RUN apt-get install -y liblzma-dev zlib1g-dev
+#RUN apt-get install -y liblzma-dev zlib1g-dev
 
 ENV DASHBOARD graphite 
 
