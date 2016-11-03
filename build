@@ -1,2 +1,1 @@
 docker build -t new_dashing/dashing .
-#docker build -t dashing/dashing .
