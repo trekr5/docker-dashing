@@ -15,8 +15,9 @@ RUN rm -rf /$DASHBOARDS/dashboards && \
     rm -rf /$DASHBOARD/assets/stylesheets/application.scss && \
     rm -rf /$DASHBOARD/config.ru && \
     rm -rf /$DASHBOARD/Gemfile && \
-    rm -rf /$DASHBOARD/Gemfile.lock && \
-    mv /$DASHBOARD/assets/stylesheets/jquery.gridster.css /$DASHBOARD/assets/stylesheets/jquery.gridster.min.css 
+    rm -rf /$DASHBOARD/Gemfile.lock 
+   # mv /$DASHBOARD/assets/stylesheets/jquery.gridster.css /$DASHBOARD/assets/stylesheets/jquery.gridster.min.css 
+RUN rm -rf /$DASHBOARD/assets/stylesheets/jquery.gridster.min.css 
 
 ADD jobs /$DASHBOARD/jobs
 ADD dashboards /$DASHBOARD/dashboards
