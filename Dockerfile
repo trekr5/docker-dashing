@@ -1,4 +1,5 @@
-FROM trekr5/dashing:latest
+#FROM trekr5/dashing:latest
+FROM artifactory.justgiving.com/base/base-dashing:1.0.8
 
 ENV DASHBOARD graphite 
 
